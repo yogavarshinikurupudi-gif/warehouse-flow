@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PackageX, PackageMinus, PackageCheck, TriangleAlert } from 'lucide-react';
+import { PackageX, PackageMinus, PackageCheck, AlertTriangle } from 'lucide-react';
 import { availableQty, reorderRecommendation } from '../engine/decisionEngine';
 
 const STATUS_META = {
   stockout: { label: 'Stockout', icon: PackageX, cls: 'text-crit-400 bg-crit-500/10 border-crit-500/30' },
-  reorder_now: { label: 'Reorder now', icon: TriangleAlert, cls: 'text-urgent-400 bg-urgent-500/10 border-urgent-500/30' },
+  reorder_now: { label: 'Reorder now', icon: AlertTriangle, cls: 'text-urgent-400 bg-urgent-500/10 border-urgent-500/30' },
   reorder_soon: { label: 'Reorder soon', icon: PackageMinus, cls: 'text-urgent-300 bg-urgent-500/5 border-urgent-500/20' },
   healthy: { label: 'Healthy', icon: PackageCheck, cls: 'text-ok-400 bg-ok-500/10 border-ok-500/30' },
 };
